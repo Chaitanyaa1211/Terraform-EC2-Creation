@@ -1,6 +1,6 @@
-# 🚀 Deploy EC2 using Terraform
+# Deploy EC2 using Terraform
 
-## 📦 Prerequisites
+## Prerequisites
 Make sure you have:
 
 - Terraform installed
@@ -9,7 +9,7 @@ Make sure you have:
 
 ---
 
-## ⚙️ Steps to Deploy
+## Steps to Deploy
 
 ### 1. Clone the Repository
 ```bash
@@ -18,8 +18,10 @@ cd <your-repo>
 
 2. Initialize Terraform
 terraform init
+
 3. Preview Changes
 terraform plan
+
 4. Deploy EC2 Instance
 terraform apply
 
@@ -28,10 +30,13 @@ Type yes when prompted.
 🔍 Verify
 Go to AWS EC2 Dashboard
 Check if instance is running
+
 🔐 SSH into Instance
 ssh -i terraform-key.pem ec2-user@<public-ip>
+
 🧹 Destroy Resources (Important)
 terraform destroy
+
 📌 Notes
 Region: ap-south-1 (Mumbai)
 Instance type: t2.micro (Free Tier)
